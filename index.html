@@ -23,6 +23,14 @@ section{padding:85px 8%;max-width:1250px;margin:auto}.white{background:white;max
 .contact{background:var(--navy);color:white}.contact h2{color:white}.contact p{color:#d8e0e9}.contact a{color:white}
 footer{text-align:center;padding:28px;color:var(--muted);font-size:13px}
 @media(max-width:800px){nav{display:block}nav a{display:inline-block;margin:12px 12px 0 0}.hero{grid-template-columns:1fr;padding-top:70px}.grid{grid-template-columns:1fr}section{padding:65px 7%}}
+
+.profile-photo-wrap{display:flex;align-items:center;justify-content:center}
+.profile-photo{width:100%;max-width:420px;aspect-ratio:4/5;object-fit:cover;border-radius:12px;box-shadow:0 20px 50px rgba(16,36,62,.18);border:1px solid #e7e9ed}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px}
+.contact-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);padding:24px;border-radius:10px}
+.contact-card a{word-break:break-word;text-decoration:none}
+.contact-card a:hover{text-decoration:underline}
+
 </style>
 </head>
 <body>
@@ -44,10 +52,10 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px}
     <p>Profissional com experiência em gestão administrativa, relacionamento com clientes, processos operacionais e desenvolvimento comercial, com atuação especialmente voltada ao segmento da saúde.</p>
     <a class="btn" href="#sobre">CONHECER MEU PERFIL →</a>
   </div>
-  <div class="hero-card">
-    <span>Perfil profissional</span>
-    <strong>Organização, relacionamento e visão comercial para transformar processos em resultados.</strong>
-  </div>
+  <div class="profile-photo-wrap">
+        <img class="profile-photo" src="https://ortholiferegen.com.br/wp-content/uploads/2026/05/ali.jpeg" alt="Foto profissional de Anderson Sousa">
+    </div>
+
 </header>
 
 <section id="sobre" class="white">
@@ -133,13 +141,36 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px}
 
 <section id="contato" class="contact">
 <div class="inner">
-  <h2>Vamos conversar?</h2>
-  <p>Estou aberto a oportunidades profissionais nas áreas de <strong>gestão, administração, comercial, relacionamento e operações</strong>.</p>
-  <p><strong>E-mail:</strong> [seu e-mail]</p>
-  <p><strong>Telefone / WhatsApp:</strong> [seu telefone]</p>
-  <p><strong>LinkedIn:</strong> [seu LinkedIn]</p>
-  <p><strong>Localização:</strong> São Paulo — SP</p>
-  <a class="btn" href="mailto:SEUEMAIL@EMAIL.COM">ENTRAR EM CONTATO →</a>
+
+    <h2>Vamos conversar?</h2>
+
+    <p>Estou aberto a oportunidades profissionais nas áreas de <strong>gestão, administração, comercial, relacionamento e operações</strong>.</p>
+
+    <div class="contact-grid">
+        <div class="contact-card">
+            <h3 style="color:white;margin-top:0;">Contato profissional</h3>
+            <p><strong>Celular / WhatsApp</strong><br>
+            <a href="https://wa.me/5511962855064" target="_blank" rel="noopener">(11) 96285-5064</a></p>
+
+            <p><strong>E-mail</strong><br>
+            <a href="mailto:contato.andersonmns@outlook.com">contato.andersonmns@outlook.com</a></p>
+        </div>
+
+        <div class="contact-card">
+            <h3 style="color:white;margin-top:0;">Perfil profissional</h3>
+            <p><strong>LinkedIn</strong><br>
+            <a href="https://www.linkedin.com/in/anderson-meneses-6a702a337" target="_blank" rel="noopener">linkedin.com/in/anderson-meneses-6a702a337</a></p>
+
+            <p><strong>Localização</strong><br>São Paulo — SP</p>
+        </div>
+    </div>
+
+    <p style="margin-top:30px;">
+        <a class="btn" href="mailto:contato.andersonmns@outlook.com">ENTRAR EM CONTATO →</a>
+        <a class="btn" href="https://wa.me/5511962855064" target="_blank" rel="noopener" style="margin-left:10px;">WHATSAPP →</a>
+        <a class="btn" href="https://www.linkedin.com/in/anderson-meneses-6a702a337" target="_blank" rel="noopener" style="margin-left:10px;">LINKEDIN →</a>
+    </p>
+
 </div>
 </section>
 
